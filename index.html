@@ -6,8 +6,25 @@
     <title>CarCo App</title>
     <link rel="manifest" href="manifest.json">
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
-        iframe { width: 100%; height: 100%; border: none; }
+        /* 1. Force the page background to match your Dark Mode app */
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            width: 100%;
+            overflow: hidden; 
+            background-color: #0e1117; /* Match Streamlit's default Dark background */
+        }
+    
+        /* 2. Ensure the iframe is truly fullscreen with no gaps */
+        iframe { 
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; 
+            height: 100%; 
+            border: none; 
+        }
     </style>
 </head>
 <body>
